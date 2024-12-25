@@ -6,7 +6,12 @@ The components of the processor are implemented with individual Verilog HDL file
 
 A testbench block is embedded in rv32i_cpu.v as well. The simulated clock is 50 Mhz (20ns period) and the first 40 ns is set for reset. Therefore, the first instruction's result should be visible between 130 ns and 150 ns after the simulation begins. Refer to online tutorials on how to compile and simulate in ModelSim/Questa.  
 ## a soft processor synthesizable in Intel Quartus Prime
-
+This is a Quartus Prime project implementing and synthesizing the above RV32I soft processor. The targeted FPGA is EP4CE15E22C7N. The top-level file is RV32I.bdf, which contains the 5-stage pipeline, and driving modules for peripheral devices such as TFT LCD, SDRAM, ESP-01S (Wi-Fi).
 ## a Python-based assembler
+To compile a user assembly program, use the command:
+python rv32i_assembler.py userprogram.asm
+, which will generate rv32i_machine.hex. To simulate the execution in ModelSim, copy the hex file into the soft processor's ModelSim project folder. To synthesize in Quartus Prime, copy the hex file into the soft processor's Quartus project folder. 
 ## an custom FPGA evaluation board
+The schematics and PCB layout files are included. They can be opened in CircuitMaker.
 ## example RISC-V assembly programs to run on the soft processor
+
