@@ -10,7 +10,7 @@ This is a Quartus Prime project implementing and synthesizing the above RV32I so
 ## a Python-based assembler: rv32i_assembler.py
 To compile a user assembly program, use the command:
 python rv32i_assembler.py userprogram.asm
-, which will generate rv32i_machine.hex. To simulate the execution in ModelSim, copy the hex file into the soft processor's ModelSim project folder. To synthesize in Quartus Prime, copy the hex file into the soft processor's Quartus project folder. 
+, which will generate rv32i_machine.hex. To simulate the execution in ModelSim, copy the hex file into the soft processor's ModelSim project folder. To run it on a soft processor synthesized in Quartus Prime, copy the hex file into the soft processor's Quartus project folder. 
 ## an custom FPGA evaluation board
 The schematics and PCB layout files are included. They can be opened in CircuitMaker.
 ## example RISC-V assembly programs to run on the soft processor
