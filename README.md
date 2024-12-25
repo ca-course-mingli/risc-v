@@ -14,4 +14,6 @@ python rv32i_assembler.py userprogram.asm
 ## an custom FPGA evaluation board
 The schematics and PCB layout files are included. They can be opened in CircuitMaker.
 ## example RISC-V assembly programs to run on the soft processor
-
+1. hex_calculator.asm: a hexadecimal calculator supporting addition and subtraction.
+2. sdram.asm: a demo program to test read, write and auto-refresh of the SDRAM on the FPGA evaluation board. The DISPREG procedure can display the content of any register in 8-digit hexadecimal format. The DISP procedure can display any visible ASCII character. These procedures can be directly used by students in projects that require displaying on the TFT LCD.
+3. wifi.asm: a demo program to test the Wi-Fi module ESP-01S on the FPGA evaluation board.
