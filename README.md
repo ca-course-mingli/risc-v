@@ -12,7 +12,7 @@ To compile a user assembly program, use the command:
 python rv32i_assembler.py userprogram.asm
 , which will generate rv32i_machine.hex. To simulate the execution in ModelSim, copy the hex file into the soft processor's ModelSim project folder. To run it on a soft processor synthesized in Quartus Prime, copy the hex file into the soft processor's Quartus project folder. 
 ## an custom FPGA evaluation board
-The schematics and PCB layout files are included. They can be opened in CircuitMaker.
+The schematics and PCB layout files are included as PDFs.
 ## example RISC-V assembly programs to run on the soft processor
 1. hex_calculator.asm: a hexadecimal calculator supporting addition and subtraction.
 2. sdram.asm: a demo program to test read, write and auto-refresh of the SDRAM on the FPGA evaluation board. The DISPREG procedure can display the content of any register in 8-digit hexadecimal format. The DISP procedure can display any visible ASCII character. These procedures can be directly used by students in projects that require displaying on the TFT LCD.
